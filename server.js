@@ -97,3 +97,8 @@ app.get('/app/flip/call/heads', (req,res) => {
     res.contentType('text/json');
     res.status(200).json(flipACoin('heads'));
 });
+
+app.get('/app/flip/call/tails', (req,res) => {
+    res.contentType('text/json');
+    res.status(200).json(flipACoin('tails'));
+});
