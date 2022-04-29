@@ -109,6 +109,7 @@ app.use(function(req,res) {
     res.type('text/plain');
 });
 
+//default response
 app.use(function(req,res){
     res.status(404).send('404 NOT FOUND');
 });
