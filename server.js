@@ -102,3 +102,8 @@ app.get('/app/flip/call/tails', (req,res) => {
     res.contentType('text/json');
     res.status(200).json(flipACoin('tails'));
 });
+
+app.use(function(req,res) {
+    res.status(404).end('Endpoint does not exist');
+    res.type('text/plain');
+});
