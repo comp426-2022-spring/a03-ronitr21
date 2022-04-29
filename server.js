@@ -103,6 +103,7 @@ app.get('/app/flip/call/tails', (req,res) => {
     res.status(200).json(flipACoin('tails'));
 });
 
+//testing edge cases
 app.use(function(req,res) {
     res.status(404).end('Endpoint does not exist');
     res.type('text/plain');
